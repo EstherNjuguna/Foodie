@@ -12,7 +12,8 @@ export default function Home(){
         fetch(food)
             .then((response) => response.json())
             .then((data) => {
-                setMeals(data.meals)
+         setMeals(data.meals)
+            
             })
     }
 
@@ -23,7 +24,7 @@ export default function Home(){
     let mealCards = meals.map((meal) => (<MealCard mealName={meal.strMeal} mealThumbnail={meal.strMealThumb} mealId={meal.idMeal} key={meal.idMeal}/>))
 
     return(
-        <div className="container">
+        <div className="container bg-secondary" >
             Home
             <div className="row">
                 {mealCards}

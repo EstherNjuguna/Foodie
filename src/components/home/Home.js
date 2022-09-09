@@ -10,10 +10,6 @@ export default function Home() {
       <div className="background text-center img-fluid">
         <img src="https://media.istockphoto.com/photos/enjoying-lunch-with-friends-picture-id1171787426?k=20&m=1171787426&s=612x612&w=0&h=ERlzVsPHF__UhPobUaC2fIfSTEuXLF6aUyfuqrUMNJQ=" alt="food" />
       </div>
-      <div className="container text-center">
-
-
-      </div>
       
       <section className="content">
         <div className="title text-center">
@@ -25,7 +21,9 @@ export default function Home() {
        </section>
       
     </form>
-    {/* <Footer /> */}
+    <p>
+        Signup here <a href="/signup">➔</a>
+      </p>
     {/* <ScrollToTop /> */}
     </div>
   

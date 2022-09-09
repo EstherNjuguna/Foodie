@@ -9,7 +9,7 @@ export default function MealCard({mealName, mealThumbnail, mealId}){
             <img src={mealThumbnail} className="card-img-top" alt={mealName}/>
             <div className="card-body">
                 <h5 className="card-title">{mealName}</h5>
-                <Link to={"/meal/"+mealId} className="btn btn-primary">DETAILS</Link>
+                <Link to={"/meal/"+ mealId} className="btn btn-primary">DETAILS</Link>
             </div>
         </div>
     )
