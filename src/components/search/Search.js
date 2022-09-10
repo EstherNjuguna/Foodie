@@ -1,8 +1,11 @@
 import React from 'react'
+import CreateRecipeForm from '../reviewForm/CreateRecipeForm'
 
 const Search = () => {
   return (
-    <div>Search</div>
+    <div>
+      <CreateRecipeForm />
+    </div>
   )
 }
 

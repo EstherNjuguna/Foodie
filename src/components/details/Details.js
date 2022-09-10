@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
-import Post from '../reviewForm/ReviewForm'
 import { useParams } from 'react-router-dom'
-const searchfood= "www.themealdb.com/api/json/v1/1/lookup.php?i="
+import CreateRecipeForm from '../reviewForm/CreateRecipeForm'
+const searchfood= "https://www.themealdb.com/api/json/v1/1/filter.php?c=chicken"
 export default function Details(){
   
   const[image, setImage] = useState("")
@@ -12,13 +12,12 @@ export default function Details(){
    const[id, setId] = useState("")
  let {mealId}=useParams()
 
-  const ReviewData = searchfood + mealId
+  const ReviewData = searchfood 
   const mealSearch= () => {
     fetch(ReviewData)
     .then(response => response.json())
     .then(data => {
-      const meal= data.meals
-    
+     const meal= data.meals
       setImage(meal.strMealThumb)
       setName(meal.strMeal)
        setVideo(meal.strYoutube)
@@ -43,9 +42,8 @@ export default function Details(){
     
           </div>
     
-        
           
-          { <Post /> }
+          { <CreateRecipeForm /> }
       </div>
       
     )
