@@ -1,20 +1,20 @@
 
-function SignupForm() {
+function Signup() {
     return (
     
-        <div className="Auth-form-container">
-    <form className="Auth-form">
+        <div className="Auth-form-container col-auto">
+    <form className="Auth-form col-auto ">
       <div className="Auth-form-content">
         <h3 className="Auth-form-title">Sign In</h3>
-        <div className="form-group mt-3">
+        <div className="mb-3 row" >
           <label>Email address</label>
           <input
             type="email"
-            className="form-control mt-1"
+            className="form-control mb-3 row"
             placeholder="Enter email"
           />
         </div>
-        <div className="form-group mt-3">
+        <div >
           <label>Password</label>
           <input
             type="password"
@@ -37,4 +37,4 @@ function SignupForm() {
     )
   }
   
-  export default SignupForm
+  export default Signup

@@ -1,5 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { FaHome,FaBoxes} from "react-icons/fa";
+import {BiFoodMenu} from "react-icons/bi"
+import { MdContactMail} from "react-icons/md"
+
 
 const Navbar = () => {
   return (
@@ -8,16 +12,16 @@ const Navbar = () => {
        <div className="container-fluid">    
 <ul className="navbar-nav" >
     <li className="nav-item">
-        <Link class="nav-link"to="/">Home</Link>
+        <Link class="nav-link"to="/">   <h5><FaHome /> Home</h5></Link>
     </li>
     <li className="nav-item">
-     <Link className="nav-link" to="/search">Search</Link>   
+     <Link className="nav-link" to="/search"> <h5><BiFoodMenu /> Recipe</h5></Link>   
     </li>
     <li className="nav-item">
-    <Link className="nav-link" to="/meals">Meals</Link> 
+    <Link className="nav-link" to="/meals"><h5><FaBoxes /> Service</h5></Link> 
     </li>
     <li className="nav-item">
-    {/* <Link className="nav-link" to="/details">Info</Link>  */}
+    <Link class="nav-link"to="/Signup"> <h5><MdContactMail /> SignUp</h5></Link>
     </li>
 </ul>
 </div> 
