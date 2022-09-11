@@ -80,7 +80,7 @@ function CreateRecipeForm({handleAddRecipe}){
                 
              
                 
-                <button className="layout-btn" type="reset" onClick={handleSubmit}>Add Recipe </button>
+                <button className="layout-btn" type="submit" onClick={handleSubmit}>Add Recipe </button>
             </form>
         
             </div>

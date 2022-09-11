@@ -26,14 +26,14 @@ export default function Post(){
       });
 
     return(
-        <div>
+        <div className="bg-secondary">
             <center>
-            <h3>Write your review here</h3>
+            <h3>Write your recipe here</h3>
         <form onSubmit={handleSubmit}>
         <input type="text"   onChange={handleReview} placeholder="burgers"/>
         <button type="submit">Post</button>
       </form>
-      <h3>Food review</h3>
+      {/* <h3>Recipe</h3> */}
       <ul>
       <li>
       {listOfSubmissions}
