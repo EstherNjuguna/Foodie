@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import { useParams } from 'react-router-dom'
 import CreateRecipeForm from '../reviewForm/CreateRecipeForm'
-const searchfood= "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata"
+const searchfood= "http://localhost:9292/recipes"
 export default function Details(){
   
   const[image, setImage] = useState("")
@@ -41,9 +41,7 @@ export default function Details(){
          <p><a href={source} alt={name}>{source}</a></p>
     
           </div>
-    
-          
-          { <CreateRecipeForm /> }
+  <CreateRecipeForm />
       </div>
       
     )

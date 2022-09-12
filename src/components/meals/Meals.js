@@ -9,18 +9,19 @@ export default function Home(){
 const [categories, setCategories]= useState([])
   
     useEffect(() => {
-        fetch("http://localhost:9292/categories")
+        fetch("http://localhost:9292/recipes")
           .then((res) => res.json())
-          .then(setCategories);
+          .then
+          (setCategories);
       }, []);
-    console.log()
+    
 
     // useEffect(
     //     mealFetcher, []
     // )
 
     // let mealCards = meals.map((meal) => (<MealCard mealName={meal.strMeal} mealThumbnail={meal.strMealThumb} mealId={meal.idMeal} key={meal.idMeal}/>))
-let mealCards=categories.map((category) => (<MealCard mealName={category.name} mealThumbnail={category.price} mealId={category.cat_id}key={category.cat_id}/>))
+let mealCards=categories.map((category) => (<MealCard mealName={category.name} mealTitle={category.procedure} mealThumbnail={category.url} mealId={category.cat_id}key={category.cat_id}/>))
     return(
         <div className="container bg-secondary" >
             Home
