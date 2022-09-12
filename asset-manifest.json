@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Foodie/static/css/main.e6c13ad2.css",
+    "main.js": "/Foodie/static/js/main.292a3b7d.js",
+    "index.html": "/Foodie/index.html",
+    "main.e6c13ad2.css.map": "/Foodie/static/css/main.e6c13ad2.css.map",
+    "main.292a3b7d.js.map": "/Foodie/static/js/main.292a3b7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.292a3b7d.js"
+  ]
+}
