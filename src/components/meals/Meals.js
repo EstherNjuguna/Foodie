@@ -1,28 +1,27 @@
 import React, { useEffect, useState } from "react";
-import MealCard from "../mealcard/MealCard";
+ import MealCard from "../mealcard/MealCard";
 
-const food = "https://www.themealdb.com/api/json/v1/1/search.php?s"
+// const food = "https://www.themealdb.com/api/json/v1/1/search.php?s"
 
 export default function Home(){
 
-    const [meals, setMeals] = useState([])
-
+    // const [meals, setMeals] = useState([])
+const [categories, setCategories]= useState([])
   
-    const mealFetcher = () => {
-        fetch(food)
-            .then((response) => response.json())
-            .then((data) => {
-         setMeals(data.meals)
-            
-            })
-    }
+    useEffect(() => {
+        fetch("http://localhost:9292/recipes")
+          .then((res) => res.json())
+          .then
+          (setCategories);
+      }, []);
+    
 
-    useEffect(
-        mealFetcher, []
-    )
+    // useEffect(
+    //     mealFetcher, []
+    // )
 
-    let mealCards = meals.map((meal) => (<MealCard mealName={meal.strMeal} mealThumbnail={meal.strMealThumb} mealId={meal.idMeal} key={meal.idMeal}/>))
-
+    // let mealCards = meals.map((meal) => (<MealCard mealName={meal.strMeal} mealThumbnail={meal.strMealThumb} mealId={meal.idMeal} key={meal.idMeal}/>))
+let mealCards=categories.map((category) => (<MealCard mealName={category.name} mealTitle={category.procedure} mealThumbnail={category.url} mealId={category.cat_id}key={category.cat_id}/>))
     return(
         <div className="container bg-secondary" >
             Home
@@ -33,4 +32,3 @@ export default function Home(){
         </div>
     )
 }
-

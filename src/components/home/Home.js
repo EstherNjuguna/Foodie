@@ -26,8 +26,7 @@ export default function Home() {
     //    </section>
       
     // </form>
-  <>
-         
+  <> 
 
     <div className="landingpage text-bg-secondary"> 
    

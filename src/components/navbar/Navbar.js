@@ -8,7 +8,7 @@ import { MdContactMail} from "react-icons/md"
 const Navbar = () => {
   return (
     
-<nav className="navbar navbar-expand-lg bg-primary">
+<nav className="navbar navbar-expand-lg bg-info">
        <div className="container-fluid">    
 <ul className="navbar-nav" >
     <li className="nav-item">

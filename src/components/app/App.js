@@ -100,7 +100,7 @@ function App() {
       <Route exact path="/" element={<Home />}></Route>
       <Route exact path="/search" element={<Search />}></Route>
       <Route exact path="/meal/:mealId" element={<Details />}></Route>
-      <Route exact path="/meals" element={<Meals />}></Route>
+  <Route exact path="/meals" element={<Meals />}></Route> 
       <Route exact path="/signup" element={<SignupForm />}></Route>
       <Route path="/newrecipe" element={ <CreateRecipeForm handleAddRecipe={handleAddRecipe} /> }></Route>
       <Route path="/newingredient" element={ <CreateIngredientForm handleAddIngredient={handleAddIngredient} /> }></Route>
